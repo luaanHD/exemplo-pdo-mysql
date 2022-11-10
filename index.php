@@ -1,9 +1,10 @@
 <?php
 require_once './vendor/autoload.php';
 
-use PDO;
+use ExemploPDOMySQL\MySQLConnection; //PDO
 
-$bd = new PDO('mysql:host=localhost;dbname=biblioteca', 'root', '');
+
+$bd = new MySQLConnection();  //PDO('mysql:host=localhost;dbname=biblioteca', 'root', '');
 
 $comando = $bd->prepare('SELECT * FROM generos');
 $comando->execute();
