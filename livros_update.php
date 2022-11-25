@@ -28,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
 
 <?php include('./includes/header.php') ?>
 
-<h1>Novo Livro</h1>
+<h1>Editar Livro</h1>
 <form action="livros_update.php" method="post">
     <input type="hidden" name="id" value="<?= $livro['id'] ?>">
     <div class="form-group">
